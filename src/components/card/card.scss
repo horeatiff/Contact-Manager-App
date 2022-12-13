@@ -1,0 +1,81 @@
+@use "shared/scss" as *;
+
+.card {
+  $this: &;
+  display: flex;
+  flex-direction: column;
+
+  &.active {
+    #{$this}__info {
+      border-radius: 6px 6px 0 0;
+      z-index: 2;
+    }
+
+    #{$this}__controls {
+      transform: translate(0, 0);
+      z-index: 1;
+      height: fit-content;
+      // todo
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 10px;
+    background-color: $gray;
+    border-radius: 6px;
+
+    > img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 100%;
+      grid-row: span 2;
+
+      @include tablet {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &--name,
+    &--address {
+      display: block;
+      width: 100%;
+      word-break: break-all;
+      line-height: 16px;
+    }
+
+    &--name {
+      margin-top: auto;
+    }
+
+    &--address {
+      opacity: 0.6;
+      margin-bottom: auto;
+    }
+  }
+
+  &__controls {
+    background-color: $gray;
+    width: 100%;
+    transition-duration: 0.7s;
+    border-radius: 0 0 6px 6px;
+    transform: translate(0, -100%);
+    z-index: -1;
+    height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > .btn {
+      background-color: transparent;
+      color: $black;
+    }
+  }
+}

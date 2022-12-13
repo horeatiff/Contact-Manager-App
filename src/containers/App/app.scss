@@ -1,0 +1,62 @@
+@use "shared/scss" as *;
+
+.app {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  background-color: $azure;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+
+  &__logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 10px;
+    overflow-y: scroll;
+    max-height: 60vh;
+
+    @include tablet {
+      max-height: 50vh;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__buttons {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+  }
+
+  &__add-contacts.btn {
+    background-color: $white;
+    color: $azure;
+    border-radius: 100%;
+  }
+
+  @include tablet {
+    min-height: initial;
+    max-height: calc(100vh - 100px);
+    max-width: $mobile;
+    box-shadow: 5px 5px 5px 5px rgba($black, 0.05);
+    border-radius: 6px;
+  }
+}

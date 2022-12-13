@@ -1,0 +1,21 @@
+@use "shared/scss" as *;
+
+.btn {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  gap: 5px;
+
+  // removing default styles
+  border: none;
+  color: $white;
+  background-color: $azure;
+
+  svg {
+    color: currentColor;
+  }
+}

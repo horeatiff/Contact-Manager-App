@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "address": "87th Main Street, New York",
+    "profileImage": ""
+  },
+  {
+    "id": 2,
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "2000 Andy Street, South Dakota",
+    "profileImage": ""
+  },
+  {
+    "id": 3,
+    "firstName": "Horea",
+    "lastName": "Tiff",
+    "address": "Soporului 8, Cluj",
+    "profileImage": ""
+  },
+  {
+    "id": 4,
+    "firstName": "Audrey ",
+    "lastName": "Pendergast",
+    "address": "4854 Duffy Street, Indiana",
+    "profileImage": ""
+  },
+  {
+    "id": 5,
+    "firstName": "Bonita",
+    "lastName": "Plouffe",
+    "address": "793 Scenicview Drive, Texas",
+    "profileImage": ""
+  }
+]

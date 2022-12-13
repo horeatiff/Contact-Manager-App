@@ -1,0 +1,9 @@
+@use "shared/scss" as *;
+
+.input {
+  background-color: $gray;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+}
